@@ -264,13 +264,6 @@ public class DDGridLayout extends GridLayout
     }
 
     @Override
-    public void paintContent(PaintTarget target) throws PaintException {
-        if (dropHandler != null && isEnabled()) {
-            dropHandler.getAcceptCriterion().paint(target);
-        }
-    }
-
-    @Override
     public void changeVariables(Object source, Map<String, Object> variables) {
         // To be compatible with Designer drag & drop
     }
